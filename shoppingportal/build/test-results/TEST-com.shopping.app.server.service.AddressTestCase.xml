@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shopping.app.server.service.AddressTestCase" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-12-04T11:32:29" hostname="0b09333dec61" time="0.252">
+  <properties/>
+  <testcase name="test1Save" classname="com.shopping.app.server.service.AddressTestCase" time="0.156"/>
+  <testcase name="test2Update" classname="com.shopping.app.server.service.AddressTestCase" time="0.015"/>
+  <testcase name="test3FindById" classname="com.shopping.app.server.service.AddressTestCase" time="0.005"/>
+  <testcase name="test3findByaddressTypeId" classname="com.shopping.app.server.service.AddressTestCase" time="0.006"/>
+  <testcase name="test3findBycityId" classname="com.shopping.app.server.service.AddressTestCase" time="0.006"/>
+  <testcase name="test3findBycountryId" classname="com.shopping.app.server.service.AddressTestCase" time="0.006"/>
+  <testcase name="test3findBystateId" classname="com.shopping.app.server.service.AddressTestCase" time="0.006"/>
+  <testcase name="test4Delete" classname="com.shopping.app.server.service.AddressTestCase" time="0.051"/>
+  <system-out><![CDATA[In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.399--ClientSession(565386017)--Connection(775863202)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressType_M (addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [7FF56D17-2186-4D8A-8CFF-B730305DFCF3, poK5mY0ITp6stm0v0VI2Ftn4NccrYVlnNwuy7CnwLNY2JYKruD, 4anOEScUsslqDquPTCJgnO8lYriT9afBZaGJU4u7oIwcc9BZg7, edrdC7MTGZL26RJwKS7rMQLPNnjJ2P9DZQ8XRyBGZ1xi6seAio, 1, AAAAA, 2015-12-04 17:02:29.391, null, 2015-12-04 17:02:29.391, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.41--ClientSession(554861908)--Connection(775863202)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [F0C707F3-DE2A-4638-88E0-18B7D377086F, H0aGRY4G1KXu27b6r2haVrIAe0iGBQTm, 9, 8, HaF, 0tA, UjpGJyM0DhTL1XZHfnSJcPqy8JPmCNFn79zOPlg1E7Mvdl4e2B, xyretPqqluiEkq2GBc9GAaKBWGQTod6wP9XYPIIVYkGpve31Du, dct, OMHnseBbr0HfU7Z0nQdpyMZynNI9bbm6mv9LPMgXNomQI6QhHK, oyeBqNSZFMrovn8OnO0gVJzz7YgCuU7P, 2, 1, AAAAA, 2015-12-04 17:02:29.403, null, 2015-12-04 17:02:29.403, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.423--ClientSession(940570502)--Connection(775863202)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [924B926D-92DA-487F-97A3-CADA44A3D54F, F0C707F3-DE2A-4638-88E0-18B7D377086F, S1J9YhwAEUA0odledtjdwVAPaPqGYYJr2UyOgpLXFGHMsMgCw8, 6, 5, 2, vPcyFDbRV7x6yTc0nx7J2TOwUKjYrzYF, WgeLyxtdgxn4xjquY6xGchH2R76mNicw, a2LI64iU8dRBOMg6pO89TUlLJdsPHmpqfbS60KoSddDx2qI88X, yMwDmHErBEzeiCJbrCniR8dtVAqioTaHeZ8VslGuGPW3MAUM7c, NKr4gBSx9t68R8Hl9tjIhGAkVV9R2E6eSPCwkR9rFEXLZwzHyt, 1, AAAAA, 2015-12-04 17:02:29.416, null, 2015-12-04 17:02:29.416, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.468--ClientSession(1740270828)--Connection(775863202)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_City_M (cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [93C911B6-6C2E-4619-B496-3E75BD82199E, 1, IBBq7C5wT3O8sZLKO6FpT968bK4MYM1o, wLM1qJZU7DHuUl2o3NPfYprv9Bvd1lfAlA8UyudhP4344XeMx7, KsngkgDTwQlORkfabZeEQZjiywLKZxqIKDLNqTGaDmEEUDHCTT, 6, 3, D33LlSMU8Rf3xXqmAIF79AzBF6Xz5N3F5mMu5eu8UEnizwvwvX, F0C707F3-DE2A-4638-88E0-18B7D377086F, 924B926D-92DA-487F-97A3-CADA44A3D54F, 1, AAAAA, 2015-12-04 17:02:29.403, null, 2015-12-04 17:02:29.403, 1, null]
+Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.527--ClientSession(303847216)--Connection(775863202)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Address_T (addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [A66A1283-E1CD-46E3-9F79-19A1A24AE8BE, UnGZOo7egh8whGsoVCTV0yzrpgnisCYJc0L8mQX6FEopbOUeco, nIvhNNJZDQp9makJ6abx59wApEIrwGgjL92P4SomschLxaNQtt, dLkvPVctuC8EIqhjZwymsghk7UM1rhzTgsJECrbeKuexhVJKPA, tk4c61LzGJz, 7FF56D17-2186-4D8A-8CFF-B730305DFCF3, 93C911B6-6C2E-4619-B496-3E75BD82199E, F0C707F3-DE2A-4638-88E0-18B7D377086F, gLo0kSfRoXKZcVHqgjWouCRmpSJJeL0IT3v1BOFztKh3JiBYAx, FQkNUuaPT6OoBS4js3eRzK8Dz0HB5IE3HkuRY3QnyN81SIbt4C, 924B926D-92DA-487F-97A3-CADA44A3D54F, 1, kl1SOk, AAAAA, 2015-12-04 17:02:29.472, null, 2015-12-04 17:02:29.472, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.539--ClientSession(963160880)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (addressId = ?))
+	bind => [1, A66A1283-E1CD-46E3-9F79-19A1A24AE8BE]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.541--ClientSession(978659275)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE (addressId = ?)
+	bind => [A66A1283-E1CD-46E3-9F79-19A1A24AE8BE]
+[EL Fine]: sql: 2015-12-04 11:32:29.543--ClientSession(978659275)--Connection(775863202)--Thread(Thread[Test worker,5,main])--UPDATE ast_Address_T SET address1 = ?, address2 = ?, address3 = ?, addressLabel = ?, latitude = ?, longitude = ?, zipcode = ?, updatedBy = ?, versionId = ? WHERE ((addressId = ?) AND (versionId = ?))
+	bind => [As7YcTE085tumkBn8lbICKOTVp9s2gdgprZGKKFfYRAnrg8tzM, TRsp8jk1mhnfCQ1ci6UBwbVPcIjYJx1Y0bZYF1leKYfuGGa3j9, 1ptvkdZTxrUe2mlPpu6XcgK4RxjY1VDdlKdvD7cEM9ZvZ8oRKQ, dZ7JNqT4zw5, ezoDtWHaL0BOTYg7tD0tr02EQDClQRdTvVramHxCws6STytAwd, 3PiFYiTrlW8dRVmmvycwPrIn4ZKbiytSYru7V65G1nUDwxJx42, twxsuV, AAAAA, 2, A66A1283-E1CD-46E3-9F79-19A1A24AE8BE, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.551--ClientSession(1699601546)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (addressId = ?))
+	bind => [1, A66A1283-E1CD-46E3-9F79-19A1A24AE8BE]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.557--ClientSession(1626411150)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (addressTypeId = ?))
+	bind => [1, 7FF56D17-2186-4D8A-8CFF-B730305DFCF3]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.563--ClientSession(68536537)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (cityId = ?))
+	bind => [1, 93C911B6-6C2E-4619-B496-3E75BD82199E]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.569--ClientSession(1020683640)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (countryId = ?))
+	bind => [1, F0C707F3-DE2A-4638-88E0-18B7D377086F]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.575--ClientSession(1829165853)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (stateId = ?))
+	bind => [1, 924B926D-92DA-487F-97A3-CADA44A3D54F]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.583--ClientSession(1861068215)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE (addressId = ?)
+	bind => [A66A1283-E1CD-46E3-9F79-19A1A24AE8BE]
+[EL Fine]: sql: 2015-12-04 11:32:29.585--ClientSession(1861068215)--Connection(775863202)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Address_T WHERE ((addressId = ?) AND (versionId = ?))
+	bind => [A66A1283-E1CD-46E3-9F79-19A1A24AE8BE, 2]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.592--ClientSession(1440355432)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE (cityId = ?)
+	bind => [93C911B6-6C2E-4619-B496-3E75BD82199E]
+[EL Fine]: sql: 2015-12-04 11:32:29.593--ClientSession(1440355432)--Connection(775863202)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_City_M WHERE ((cityId = ?) AND (versionId = ?))
+	bind => [93C911B6-6C2E-4619-B496-3E75BD82199E, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.599--ClientSession(1721748446)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_State_M WHERE (stateId = ?)
+	bind => [924B926D-92DA-487F-97A3-CADA44A3D54F]
+[EL Fine]: sql: 2015-12-04 11:32:29.601--ClientSession(1721748446)--Connection(775863202)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_State_M WHERE ((stateId = ?) AND (versionId = ?))
+	bind => [924B926D-92DA-487F-97A3-CADA44A3D54F, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.615--ClientSession(1547725190)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind => [F0C707F3-DE2A-4638-88E0-18B7D377086F]
+[EL Fine]: sql: 2015-12-04 11:32:29.617--ClientSession(1547725190)--Connection(775863202)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind => [F0C707F3-DE2A-4638-88E0-18B7D377086F, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:29.623--ClientSession(800369766)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
+	bind => [7FF56D17-2186-4D8A-8CFF-B730305DFCF3]
+[EL Fine]: sql: 2015-12-04 11:32:29.624--ClientSession(800369766)--Connection(775863202)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressType_M WHERE ((addressTypeId = ?) AND (versionId = ?))
+	bind => [7FF56D17-2186-4D8A-8CFF-B730305DFCF3, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

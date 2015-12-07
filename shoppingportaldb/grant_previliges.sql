@@ -1,0 +1,2 @@
+
+GRANT ALL PRIVILEGES  ON shopping.* TO 'shopping'@'%' IDENTIFIED BY 'shopping' WITH GRANT OPTION

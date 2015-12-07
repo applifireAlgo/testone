@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shopping.app.server.service.TimezoneTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-12-04T11:32:32" hostname="0b09333dec61" time="0.044">
+  <properties/>
+  <testcase name="test1Save" classname="com.shopping.app.server.service.TimezoneTestCase" time="0.019"/>
+  <testcase name="test2Update" classname="com.shopping.app.server.service.TimezoneTestCase" time="0.012"/>
+  <testcase name="test3FindById" classname="com.shopping.app.server.service.TimezoneTestCase" time="0.004"/>
+  <testcase name="test4Delete" classname="com.shopping.app.server.service.TimezoneTestCase" time="0.008"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:32.493--ClientSession(1189789898)--Connection(775863202)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Timezone_M (timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [E112538C-0758-4BB7-862D-2A3BE7AC68F8, LGF8w7hbeRYkEhG2O2FAQJS7egadiAu2TLd0ucqbYmOhV8mJ14, awJZpSdekcgUWo6NQIkdX4pRPHB5b1lldmI0cnRRNB1ZZdDIZs, g3rQQwL4K5cG9dyNXIckYAXVvIqvC61lwJvs6hk7ExyeeZJRnE, MIqMgO6JX85saM9N0ghpq179D3cfM9R61NVpCm6iPtEMGSQS0u, 9, 1, AAAAA, 2015-12-04 17:02:32.486, null, 2015-12-04 17:02:32.486, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:32.5--ClientSession(2060082530)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE ((activeStatus = ?) AND (timeZoneId = ?))
+	bind => [1, E112538C-0758-4BB7-862D-2A3BE7AC68F8]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:32.503--ClientSession(1918074779)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [E112538C-0758-4BB7-862D-2A3BE7AC68F8]
+[EL Fine]: sql: 2015-12-04 11:32:32.504--ClientSession(1918074779)--Connection(775863202)--Thread(Thread[Test worker,5,main])--UPDATE ast_Timezone_M SET cities = ?, country = ?, gmtLabel = ?, timeZoneLabel = ?, utcdifference = ?, updatedBy = ?, versionId = ? WHERE ((timeZoneId = ?) AND (versionId = ?))
+	bind => [F2fzdKlKTBRHseeVBRXJpdsAVmzIsLmQTeF2ObMrzk0lxJcJ4U, KUXB5bO59LPfk0oW1EOpy4ZWfUa4YIjDLszAeutjGJxXOfiqFu, 3AgaonAzTeTCWZNjq0iRWfOhBJtZnQe2QPxc0QxWAGEsnJ0vQq, erjbwibZnbqR8YF7mghXiO6mIWt9B9vdtmeHze0KscDZkqTQYj, 8, AAAAA, 2, E112538C-0758-4BB7-862D-2A3BE7AC68F8, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:32.511--ClientSession(574664930)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE ((activeStatus = ?) AND (timeZoneId = ?))
+	bind => [1, E112538C-0758-4BB7-862D-2A3BE7AC68F8]
+In around repository aspect
+[EL Fine]: sql: 2015-12-04 11:32:32.516--ClientSession(979442186)--Connection(775863202)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [E112538C-0758-4BB7-862D-2A3BE7AC68F8]
+[EL Fine]: sql: 2015-12-04 11:32:32.517--ClientSession(979442186)--Connection(775863202)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Timezone_M WHERE ((timeZoneId = ?) AND (versionId = ?))
+	bind => [E112538C-0758-4BB7-862D-2A3BE7AC68F8, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
